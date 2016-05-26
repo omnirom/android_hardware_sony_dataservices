@@ -1,4 +1,4 @@
-ifneq ($(filter yukon rhine shinano kanuti kitakami,$(PRODUCT_PLATFORM)),)
+ifeq ($(SONY_AOSP), true)
 
 include $(call all-subdir-makefiles)
 

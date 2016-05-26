@@ -1,3 +1,5 @@
+ifeq ($(SONY_AOSP), true)
+
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -17,3 +19,5 @@ LOCAL_MODULE := sockev
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_EXECUTABLE)
+
+endif
